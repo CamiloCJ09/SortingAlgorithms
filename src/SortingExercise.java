@@ -40,7 +40,7 @@ public class SortingExercise {
         double[] numsArray = Arrays.copyOf(nums, nums.length);
         int n = numsArray.length;
         int count = 0;
-        double temp = 0;
+        double temp;
         boolean changed = true;
         for(int i=0; i < n && changed; i++){
             changed = false;
