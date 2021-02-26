@@ -25,6 +25,7 @@ public class SortingExercise {
             bw.write(sortNums(numsToDouble(numsArray))+"\n");
             i++;
         }
+        sc.close();
         bw.close();
     }
     //Transform String array to double array
@@ -56,7 +57,7 @@ public class SortingExercise {
 
             }
         }
-        float value = (float) count/(n-1);
+        double value = Math.floor((float) count/(n-1)*100)/100;
         StringBuilder ret = new StringBuilder();
         //Add spaces between each number
         for (int i = 0; i < numsArray.length-1; i++) {
